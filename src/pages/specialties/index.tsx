@@ -1,7 +1,7 @@
-export default function Soecialties() {
+export default function Specialties() {
   return (
     <div>
-      <h1>Page Soecialties</h1>
+      <h1>Page Specialties</h1>
     </div>
   );
 };
