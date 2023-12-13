@@ -1,7 +1,7 @@
 export default function App() {
   return (
-    <div>
-      Page App
-    </div>
+    <h1>
+      Hello world!
+    </h1>
   );
 };
