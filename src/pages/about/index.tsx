@@ -1,11 +1,12 @@
+import Background from "../../components/background";
 import Header from "../../components/header";
 
 export default function About() {
   return (
-    <div>
+    <Background>
       <Header/>
 
-      <h1>Page About</h1>
-    </div>
+      <h1 className="text-white" >Page About</h1>
+    </Background>
   );
 };
