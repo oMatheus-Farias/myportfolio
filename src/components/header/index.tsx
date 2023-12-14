@@ -3,7 +3,11 @@ import { FiMenu } from "react-icons/fi";
 
 import { Link } from "react-router-dom";
 
-export default function Header() {
+interface HeaderProps {
+  openMenu: () => void;
+};
+
+export default function Header({ openMenu }: HeaderProps) {
   return (
     <div className="w-full h-[4.7em] px-[1.2em] py-4 bg-primary flex items-center justify-between" >
       <Link to="/" >
@@ -13,7 +17,7 @@ export default function Header() {
         />
       </Link>
 
-      <button>
+      <button onClick={ openMenu } >
         <FiMenu 
           color="#FFFBFF" size={36} 
         />

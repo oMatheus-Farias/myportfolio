@@ -9,11 +9,11 @@ import { MdEmail } from "react-icons/md";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function About() {
-  const [openNav, setOpenNav] = useState(true);
+  const [openOrCloseMenu, setOpenOrCloseMenu] = useState(false);
 
   return (
     <Background>
-      <Header/>
+      <Header openMenu={ () => setOpenOrCloseMenu(!openOrCloseMenu) } />
 
       <div className="px-[1.2em] py-10 w-full flex flex-col items-center" >
         <div>
@@ -49,7 +49,7 @@ export default function About() {
         </div>
       </div>
 
-      { openNav && <Nav/> }
+      { openOrCloseMenu && <Nav closeMenu={ () => setOpenOrCloseMenu(!openOrCloseMenu) } /> }
     </Background>
   );
 };

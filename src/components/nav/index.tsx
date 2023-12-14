@@ -1,11 +1,17 @@
 import { IoClose } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
-export default function Nav(){
+interface NavProps {
+  closeMenu: () => void
+};
+
+export default function Nav({ closeMenu }: NavProps){
   return(
     <div className="w-full h-full bg-backgroundFilter backdrop-blur-md  px-[1.2em] py-4 absolute top-0" >
       <div className="w-full flex justify-end" >
-        <IoClose color="#FFFBFF" size={40} />
+        <button onClick={ closeMenu } >
+          <IoClose color="#FFFBFF" size={40} />
+        </button>
       </div>
 
       <section className="w-full flex flex-col my-20 gap-20" >
