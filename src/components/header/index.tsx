@@ -9,7 +9,11 @@ export default function Header() {
         alt="Matheus Farias - Desenvolvedor Web"
       />
 
-      <FiMenu color="#FFFBFF" size={36} />
+      <button>
+        <FiMenu 
+          color="#FFFBFF" size={36} 
+        />
+      </button>
     </div>
   );
 };
