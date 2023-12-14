@@ -1,5 +1,7 @@
+import { useState } from "react";
 import Background from "../../components/background";
 import Header from "../../components/header";
+import Nav from "../../components/nav";
 
 import avatarImage from "../../assets/foto-perfil.jpeg";
 
@@ -7,6 +9,8 @@ import { MdEmail } from "react-icons/md";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function About() {
+  const [openNav, setOpenNav] = useState(true);
+
   return (
     <Background>
       <Header/>
@@ -44,6 +48,8 @@ export default function About() {
           </button>
         </div>
       </div>
+
+      { openNav && <Nav/> }
     </Background>
   );
 };
