@@ -3,6 +3,9 @@ import Header from "../../components/header";
 
 import avatarImage from "../../assets/foto-perfil.jpeg";
 
+import { MdEmail } from "react-icons/md";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+
 export default function About() {
   return (
     <Background>
@@ -13,7 +16,7 @@ export default function About() {
           <img
             src={ avatarImage }
             alt="Foto Perfil"
-            className="object-cover rounded-full w-[350px] h-[350px] object-top border-8 border-secondary "
+            className="object-cover rounded-full w-[300px] h-[300px] object-top border-8 border-secondary "
           />
         </div>
 
@@ -31,6 +34,15 @@ export default function About() {
             Estou confiante de que minha determinação, habilidades técnicas e comprometimento serão ativos valiosos para qualquer equipe de desenvolvimento.
           </p>
         </section>
+
+        <div className="w-full flex justify-start items-center gap-6 mt-5" >
+          <a href="#" title="email" target="_blank" ><MdEmail color="#61F2C2" size={38} /></a>
+          <a href="#" title="gitHub" target="_blank" ><FaGithub color="#61F2C2" size={32} /></a>
+          <a href="#" title="linkedIn" target="_blank" ><FaLinkedin color="#61F2C2" size={32} /></a>
+          <button className="bg-effectsColor px-4 py-2 rounded-xl font-bold text-base text-black" >
+            Baixar CV
+          </button>
+        </div>
       </div>
     </Background>
   );
