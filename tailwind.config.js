@@ -11,7 +11,8 @@ export default {
         secondary: '#61F2C2',
         textColor: '#FFFBFF',
         effectsColor: '#F24C00',
-        backgroundFilter: 'rgba(0, 0, 0, 0.7)'
+        backgroundFilter: 'rgba(0, 0, 0, 0.7)',
+        cardsColor: 'rgba(255, 255, 255, 0.2)'
       },
       backgroundImage: {
         'backgroundImage': "url('../src/assets/bg-image.jpg')"
