@@ -28,7 +28,7 @@ export default function About() {
           <img
             src={ avatarImage }
             alt="Foto Perfil"
-            className="object-cover rounded-full w-[300px] h-[300px] object-top border-8 border-secondary lg:ml-auto lg:mt-16 lg:w-[360px] lg:h-[360px]"
+            className="object-cover rounded-full w-[18.7em] h-[18.7em] object-top border-8 border-secondary lg:ml-auto lg:mt-16 lg:w-[360px] lg:h-[360px]"
           />
         </div>
 

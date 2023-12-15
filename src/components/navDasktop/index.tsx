@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function NavDasktop(){
   return(
-    <nav className="flex items-center gap-16" >
+    <nav className="flex items-center gap-8 lg:gap-16" >
       <Link 
           className="text-textColor font-bold"
           to='/' 

@@ -20,7 +20,7 @@ export default function Provider({ children }: { children: ReactNode }){
 
   function handleViewSize(){
     let viewDasktop: boolean;
-    window.innerWidth >= 1024 ? viewDasktop = true : viewDasktop = false;
+    window.innerWidth >= 768 ? viewDasktop = true : viewDasktop = false;
 
     setViewDascktop(viewDasktop);
   };
