@@ -4,6 +4,8 @@ interface ContextData {
   viewDasktop: boolean,
   openOrCloseMenu: boolean,
   setOpenOrCloseMenu: (openOrCloseMenu: boolean) => void;
+  currentPage: string,
+  setCurrentPage: any
 };
 
 export const Context = createContext({} as ContextData);
@@ -11,6 +13,7 @@ export const Context = createContext({} as ContextData);
 export default function Provider({ children }: { children: ReactNode }){
   const [viewDasktop, setViewDascktop] = useState<any>(null);
   const [openOrCloseMenu, setOpenOrCloseMenu] = useState(false);
+  const [currentPage, setCurrentPage] = useState('');
 
   useEffect(() => {
     handleViewSize();
@@ -26,7 +29,7 @@ export default function Provider({ children }: { children: ReactNode }){
   };
 
   return(
-    <Context.Provider value={{ viewDasktop, openOrCloseMenu, setOpenOrCloseMenu }} >
+    <Context.Provider value={{ viewDasktop, openOrCloseMenu, setOpenOrCloseMenu, currentPage, setCurrentPage }} >
       { children }
     </Context.Provider>
   );

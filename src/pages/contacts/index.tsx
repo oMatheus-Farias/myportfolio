@@ -9,10 +9,15 @@ import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 
 export default function Contacts() {
-  const { viewDasktop, openOrCloseMenu, setOpenOrCloseMenu } = useContext(Context);
+  const { viewDasktop, openOrCloseMenu, setOpenOrCloseMenu, setCurrentPage } = useContext(Context);
 
   useEffect(() => {
     setOpenOrCloseMenu(false);
+    setCurrentPage('/contacts');
+
+    return () => {
+      setCurrentPage('');
+    };
   }, []);
 
   return (
