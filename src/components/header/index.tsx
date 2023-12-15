@@ -11,7 +11,7 @@ interface HeaderProps {
 
 export default function Header({ openMenu, viewSize }: HeaderProps) {
   return (
-    <div className="w-full h-[4.7em] px-[1.2em] py-4 bg-primary flex items-center justify-between" >
+    <header className="w-full h-[4.7em] px-[1.2em] py-4 bg-primary flex items-center justify-between" >
       <Link to="/" >
         <img
           src={ logo }
@@ -28,6 +28,6 @@ export default function Header({ openMenu, viewSize }: HeaderProps) {
           />
         </button>
       ) : '' }
-    </div>
+    </header>
   );
 };
