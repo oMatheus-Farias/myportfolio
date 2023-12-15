@@ -1,16 +1,19 @@
 import { createContext, ReactNode, useState, useEffect } from "react";
 
 interface ContextData {
-  viewDasktop: boolean
+  viewDasktop: boolean,
+  openOrCloseMenu: boolean,
+  setOpenOrCloseMenu: (openOrCloseMenu: boolean) => void;
 };
 
 export const Context = createContext({} as ContextData);
 
 export default function Provider({ children }: { children: ReactNode }){
   const [viewDasktop, setViewDascktop] = useState<any>(null);
+  const [openOrCloseMenu, setOpenOrCloseMenu] = useState(false);
 
   useEffect(() => {
-    handleViewSize()
+    handleViewSize();
   }, [])
 
   window.addEventListener('resize', handleViewSize);
@@ -23,7 +26,7 @@ export default function Provider({ children }: { children: ReactNode }){
   };
 
   return(
-    <Context.Provider value={{ viewDasktop }} >
+    <Context.Provider value={{ viewDasktop, openOrCloseMenu, setOpenOrCloseMenu }} >
       { children }
     </Context.Provider>
   );

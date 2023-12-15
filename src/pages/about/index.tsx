@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import Background from "../../components/background";
 import Header from "../../components/header";
 import Nav from "../../components/nav";
@@ -11,8 +11,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Context } from "../../contexts";
 
 export default function About() {
-  const { viewDasktop } = useContext(Context);
-  const [openOrCloseMenu, setOpenOrCloseMenu] = useState(false);
+  const { viewDasktop, openOrCloseMenu, setOpenOrCloseMenu } = useContext(Context);
   
   return (
     <Background>
