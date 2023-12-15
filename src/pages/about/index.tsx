@@ -10,12 +10,30 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function About() {
   const [openOrCloseMenu, setOpenOrCloseMenu] = useState(false);
+  const [viewDasktop, setViewDascktop] = useState<boolean | null>(null);
+
+  window.addEventListener('resize', handleViewSize);
+  window.addEventListener('load', handleViewSize);
+
+  function handleViewSize(){
+    let viewDasktop: boolean;
+
+    if(window.innerWidth >= 1024){
+      viewDasktop = true
+    }else{
+      viewDasktop = false
+    };
+
+    setViewDascktop(viewDasktop);
+  };
+
+  console.log(viewDasktop);
 
   return (
     <Background>
       <Header openMenu={ () => setOpenOrCloseMenu(!openOrCloseMenu) } />
 
-      <div 
+      <main 
         className="px-[1.2em] py-10 w-full flex flex-col items-center lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:px-36 lg:mx-auto lg:max-w-[1200px]" 
       >
         <div className="col-start-2 col-end-2 row-start-1 row-end-1" >
@@ -52,7 +70,7 @@ export default function About() {
             </button>
           </div>
         </div>
-      </div>
+      </main>
 
       { openOrCloseMenu && <Nav closeMenu={ () => setOpenOrCloseMenu(!openOrCloseMenu) } /> }
     </Background>
