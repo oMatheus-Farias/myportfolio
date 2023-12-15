@@ -55,10 +55,13 @@ export default function About() {
         
         
           <div className="w-full flex justify-start items-center gap-6 mt-5" >
-            <a href="#" title="email" target="_blank" ><MdEmail color="#61F2C2" size={36} /></a>
-            <a href="#" title="gitHub" target="_blank" ><FaGithub color="#61F2C2" size={32} /></a>
-            <a href="#" title="linkedIn" target="_blank" ><FaLinkedin color="#61F2C2" size={32} /></a>
-            <button className="bg-effectsColor px-4 py-2 rounded-xl font-bold text-base text-black" >
+            <a href="#" title="Email" target="_blank" ><MdEmail color="#61F2C2" size={36} /></a>
+            <a href="#" title="GitHub" target="_blank" ><FaGithub color="#61F2C2" size={32} /></a>
+            <a href="#" title="LinkedIn" target="_blank" ><FaLinkedin color="#61F2C2" size={32} /></a>
+            <button 
+              title="Baixar currículo"
+              className="bg-effectsColor px-4 py-2 rounded-xl font-bold text-base text-black" 
+            >
               Baixar CV
             </button>
           </div>
