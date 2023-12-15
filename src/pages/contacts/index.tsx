@@ -33,7 +33,7 @@ export default function Contacts() {
                 className="flex items-center gap-2"
               >
                 <MdEmail color="#61F2C2" size={36} />
-                <p className="text-textColor" >matheusfariasdasneves@gmail.com</p>
+                <p className="text-textColor underline" >matheusfariasdasneves@gmail.com</p>
               </a>
             </section>
             <section className="mt-5" >
@@ -44,7 +44,7 @@ export default function Contacts() {
                 <FaLinkedin color="#61F2C2" size={34} 
                 
                 />
-                <p className="text-textColor" >https://linkedin/matheusfarias.com</p>
+                <p className="text-textColor underline" >https://linkedin/matheusfarias.com</p>
               </a>
             </section>
           </div>
