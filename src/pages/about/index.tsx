@@ -10,7 +10,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function About() {
   const [openOrCloseMenu, setOpenOrCloseMenu] = useState(false);
-  const [viewDasktop, setViewDascktop] = useState<boolean | null>(null);
+  const [viewDasktop, setViewDascktop] = useState<boolean>(true);
 
   window.addEventListener('resize', handleViewSize);
   window.addEventListener('load', handleViewSize);
@@ -19,19 +19,17 @@ export default function About() {
     let viewDasktop: boolean;
 
     if(window.innerWidth >= 1024){
-      viewDasktop = true
+      viewDasktop = true;
     }else{
-      viewDasktop = false
+      viewDasktop = false;
     };
 
     setViewDascktop(viewDasktop);
   };
 
-  console.log(viewDasktop);
-
   return (
     <Background>
-      <Header openMenu={ () => setOpenOrCloseMenu(!openOrCloseMenu) } />
+      <Header openMenu={ () => setOpenOrCloseMenu(!openOrCloseMenu) } viewSize={ viewDasktop } />
 
       <main 
         className="px-[1.2em] py-10 w-full flex flex-col items-center lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:px-36 lg:mx-auto lg:max-w-[1200px]" 

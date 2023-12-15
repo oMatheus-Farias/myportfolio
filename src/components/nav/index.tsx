@@ -14,7 +14,7 @@ export default function Nav({ closeMenu }: NavProps){
         </button>
       </div>
 
-      <section className="w-full flex flex-col my-20 gap-20" >
+      <nav className="w-full flex flex-col my-20 gap-20" >
         <Link 
           className="text-textColor font-bold text-2xl block text-center"
           to='/' 
@@ -41,7 +41,7 @@ export default function Nav({ closeMenu }: NavProps){
             contatos
           </Link>
         </div>
-      </section>
+      </nav>
     </div>
   );
 };
