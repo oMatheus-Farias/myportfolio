@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Context } from "../../contexts";
 
 import Background from "../../components/background";
@@ -7,6 +7,10 @@ import Nav from "../../components/nav";
 
 export default function Specialties() {
   const { viewDasktop, openOrCloseMenu, setOpenOrCloseMenu } = useContext(Context);
+
+  useEffect(() => {
+    setOpenOrCloseMenu(false);
+  }, []);
 
   return (
     <Background>
