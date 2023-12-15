@@ -19,7 +19,7 @@ export default function Header({ openMenu, viewSize }: HeaderProps) {
         />
       </Link>
 
-      { viewSize ? (
+      { viewSize !== null ? viewSize ? (
         <NavDasktop/>
       ) : (
         <button onClick={ openMenu } >
@@ -27,7 +27,7 @@ export default function Header({ openMenu, viewSize }: HeaderProps) {
             color="#FFFBFF" size={36} 
           />
         </button>
-      ) }
+      ) : '' }
     </div>
   );
 };

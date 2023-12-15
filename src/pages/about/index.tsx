@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import Background from "../../components/background";
 import Header from "../../components/header";
 import Nav from "../../components/nav";
@@ -8,25 +8,12 @@ import avatarImage from "../../assets/foto-perfil.jpeg";
 import { MdEmail } from "react-icons/md";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
+import { Context } from "../../contexts";
+
 export default function About() {
+  const { viewDasktop } = useContext(Context);
   const [openOrCloseMenu, setOpenOrCloseMenu] = useState(false);
-  const [viewDasktop, setViewDascktop] = useState<boolean>(true);
-
-  window.addEventListener('resize', handleViewSize);
-  window.addEventListener('load', handleViewSize);
-
-  function handleViewSize(){
-    let viewDasktop: boolean;
-
-    if(window.innerWidth >= 1024){
-      viewDasktop = true;
-    }else{
-      viewDasktop = false;
-    };
-
-    setViewDascktop(viewDasktop);
-  };
-
+  
   return (
     <Background>
       <Header openMenu={ () => setOpenOrCloseMenu(!openOrCloseMenu) } viewSize={ viewDasktop } />
