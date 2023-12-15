@@ -29,7 +29,7 @@ export default function Contacts() {
           <div className="p-3 md:p-10" >
             <section>
               <a 
-                href="#" title="Email" target="_blank" 
+                href="mailto:matheusfariasdasneves@gmail.com" title="Email" target="_blank" 
                 className="flex items-center gap-2"
               >
                 <MdEmail color="#61F2C2" size={36} />
