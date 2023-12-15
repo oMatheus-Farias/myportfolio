@@ -21,19 +21,22 @@ export default function Nav({ closeMenu }: NavProps){
 
       <nav className="w-full flex flex-col my-20 gap-20" >
         <Link 
-          className="text-textColor font-bold text-2xl block text-center"
+          className="font-bold text-2xl block text-center"
+          style={{ color: currentPage === '/' ? '#F24C00' : '#FFFBFF' }}
           to='/' 
         >
           sobre
         </Link>
         <Link 
-          className="text-textColor font-bold text-2xl block text-center"
+          className="font-bold text-2xl block text-center"
+          style={{ color: currentPage === '/specialties' ? '#F24C00' : '#FFFBFF' }}
           to='/specialties' 
         >
           especialidades
         </Link>
         <Link 
-          className="text-textColor font-bold text-2xl block text-center"
+          className="font-bold text-2xl block text-center"
+          style={{ color: currentPage === '/projects' ? '#F24C00' : '#FFFBFF' }}
           to='/projects' 
         >
           projetos

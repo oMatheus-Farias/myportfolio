@@ -11,10 +11,15 @@ import { BiLogoTypescript, BiLogoTailwindCss } from "react-icons/bi";
 import { FaGitAlt } from "react-icons/fa6";
 
 export default function Specialties() {
-  const { viewDasktop, openOrCloseMenu, setOpenOrCloseMenu } = useContext(Context);
+  const { viewDasktop, openOrCloseMenu, setOpenOrCloseMenu, setCurrentPage } = useContext(Context);
 
   useEffect(() => {
     setOpenOrCloseMenu(false);
+    setCurrentPage('/specialties');
+
+    return () => {
+      setCurrentPage('');
+    };
   }, []);
 
   return (

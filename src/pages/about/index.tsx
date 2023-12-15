@@ -11,10 +11,15 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Context } from "../../contexts";
 
 export default function About() {
-  const { viewDasktop, openOrCloseMenu, setOpenOrCloseMenu } = useContext(Context);
+  const { viewDasktop, openOrCloseMenu, setOpenOrCloseMenu, setCurrentPage } = useContext(Context);
 
   useEffect(() => {
     setOpenOrCloseMenu(false);
+    setCurrentPage('/');
+
+    return () => {
+      setCurrentPage('');
+    };
   }, []);
   
   return (

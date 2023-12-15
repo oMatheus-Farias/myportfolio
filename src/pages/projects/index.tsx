@@ -9,10 +9,15 @@ import { FaGithub } from "react-icons/fa";
 import { FiLink } from "react-icons/fi";
 
 export default function Projects() {
-  const { viewDasktop, openOrCloseMenu, setOpenOrCloseMenu } = useContext(Context);
+  const { viewDasktop, openOrCloseMenu, setOpenOrCloseMenu, setCurrentPage } = useContext(Context);
 
   useEffect(() => {
     setOpenOrCloseMenu(false);
+    setCurrentPage('/projects');
+
+    return () => {
+      setCurrentPage('');
+    };
   }, []);
 
   return (
