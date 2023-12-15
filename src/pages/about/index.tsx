@@ -22,7 +22,7 @@ export default function About() {
       <Header openMenu={ () => setOpenOrCloseMenu(!openOrCloseMenu) } viewSize={ viewDasktop } />
 
       <main 
-        className="px-[1.2em] py-10 w-full flex flex-col items-center lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:px-36 lg:mx-auto lg:max-w-[1200px]" 
+        className="px-[1.2em] py-10 w-full flex flex-col items-center lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:px-36 lg:mx-auto lg:max-w-[1200px] lg:py-0 lg:pb-5" 
       >
         <div className="col-start-2 col-end-2 row-start-1 row-end-1" >
           <img
