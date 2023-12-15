@@ -17,6 +17,9 @@ export default {
       backgroundImage: {
         'backgroundImage': "url('../src/assets/bg-image.jpg')"
       },
+      height:{
+        'heightFull': 'calc(100vh - 4.7em)'
+      }
     },
   },
   plugins: [],
