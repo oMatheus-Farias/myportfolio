@@ -9,6 +9,7 @@ export default {
       colors: {
         primary: '#0A0A0B',
         secondary: '#61F2C2',
+        headerColor: '#0C0C0E',
         textColor: '#FFFBFF',
         effectsColor: '#F24C00',
         backgroundFilter: 'rgba(0, 0, 0, 0.7)',
