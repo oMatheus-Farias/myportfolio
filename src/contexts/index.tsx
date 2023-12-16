@@ -46,7 +46,7 @@ export default function Provider({ children }: { children: ReactNode }){
     },
     {
       image: typescriptImage,
-      name: 'Typescripy'
+      name: 'Typescript'
     },
     {
       image: reactImage,
