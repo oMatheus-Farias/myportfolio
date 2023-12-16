@@ -5,7 +5,7 @@ import Background from "../../components/background";
 import Header from "../../components/header";
 import Nav from "../../components/nav";
 
-import { FaHtml5, FaCss3Alt, FaReact, FaGithub, FaFigma } from "react-icons/fa";
+import { FaReact, FaGithub, FaFigma } from "react-icons/fa";
 import { RiJavascriptFill } from "react-icons/ri";
 import { BiLogoTypescript, BiLogoTailwindCss } from "react-icons/bi";
 import { FaGitAlt } from "react-icons/fa6";
