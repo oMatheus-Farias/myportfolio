@@ -46,8 +46,8 @@ export default function About() {
             </h1>
 
             <p className="text-justify text-textColor mt-5" >
-              me chamo Matheus Farias, e minha jornada no mundo da tecnologia e desenvolvimento teve início no começo de 2023. Nasci em 1999 e estou atualmente focado em minha trajetória acadêmica, cursando Análise e Desenvolvimento de Sistemas na faculdade UNG de Guarulhos.
-              Atualmente, desempenho a função de funcionário público na área de segurança, porém, estou em processo de transição de carreira, buscando oportunidades no universo do desenvolvimento front-end. Esta transição é motivada por minha paixão crescente por criar experiências digitais envolventes e funcionais.
+              me chamo Matheus Farias das Neves, e minha jornada no mundo da tecnologia e desenvolvimento teve início no começo de 2023. Estou atualmente focado em minha trajetória acadêmica, cursando Análise e Desenvolvimento de Sistemas na faculdade UNG - Guarulhos.
+              Atualmente, desempenho a função de funcionário público na área de segurança, porém, estou em processo de transição de carreira, buscando oportunidades no universo do desenvolvimento Front-End. Esta transição é motivada por minha paixão crescente por criar experiências digitais envolventes e funcionais.
               Ao longo de minha jornada, adquiri valiosos conhecimentos por meio de cursos especializados e projetos pessoais desenvolvidos durante meus estudos, que continuam a todo vapor.
               Estou confiante de que minha determinação, habilidades técnicas e comprometimento serão ativos valiosos para qualquer equipe de desenvolvimento.
             </p>
