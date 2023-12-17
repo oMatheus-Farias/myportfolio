@@ -44,8 +44,16 @@ export default function Projects() {
               />
 
               <div className="w-full bg-primary flex justify-around py-2 mt-7 rounded-b-xl" >
-                <a href="#" target="_blank" title="Repositório GitHub" ><FaGithub color="#61F2C2" size={36} /></a>
-                <a href="#" target="_blank" title="Visitar projeto" ><FiLink color="#61F2C2" size={36} /></a>
+                <a 
+                  href={ item.repository } 
+                  target={ item.repository === "#" ? "_self" : "_blank" } 
+                  title="Repositório GitHub" ><FaGithub color="#61F2C2" size={36} />
+                </a>
+                <a 
+                  href={ item.linkProject } 
+                  target={ item.linkProject === "#" ? "_self" : "_blank" } 
+                  title="Visitar projeto" ><FiLink color="#61F2C2" size={36} />
+                </a>
               </div>
             </section>
           )
