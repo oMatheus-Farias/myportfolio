@@ -12,6 +12,7 @@ import figmaImage from "../assets/figma.png";
 
 import projectImage01 from "../assets/project1.png";
 import projectImage02 from "../assets/project2.png";
+import shortlyImage from "../assets/shortly.png";
 
 interface ContextData {
   viewDasktop: boolean,
@@ -52,9 +53,15 @@ export default function Provider({ children }: { children: ReactNode }){
     {
       name: "Web Cars",
       image: projectImage02,
-      description: "WebCars é um projeto inspirado na plataforma WebMotors, este projeto destaca habilidades em desenvolvimento web, apresentando recursos como autenticação segura, cadastro de usuários, listagem e gerenciamento de carros..",
+      description: "WebCars é um projeto inspirado na plataforma WebMotors, este projeto destaca habilidades em desenvolvimento web, apresentando recursos como autenticação segura, cadastro de usuários, listagem e gerenciamento de carros.",
       technologies: "Typescript, ReactJS, Tailwindcss, Firebase, Vite"
     },
+    {
+      name: "Em breve",
+      image: shortlyImage,
+      description: "Projeto em desenvolvimento",
+      technologies: ""
+    }
   ];
 
   const technologies = [
