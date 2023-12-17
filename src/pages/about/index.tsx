@@ -57,7 +57,7 @@ export default function About() {
           <div className="w-full flex justify-start items-center gap-6 mt-5" >
             <a href="mailto:matheusfariasdasneves@gmail.com" title="Email" target="_blank" ><MdEmail color="#61F2C2" size={36} /></a>
             <a href="https://github.com/oMatheus-Farias" title="GitHub" target="_blank" ><FaGithub color="#61F2C2" size={32} /></a>
-            <a href="#" title="LinkedIn" target="_blank" ><FaLinkedin color="#61F2C2" size={32} /></a>
+            <a href="https://www.linkedin.com/in/matheus-farias-das-neves-256ba22a5/" title="LinkedIn" target="_blank" ><FaLinkedin color="#61F2C2" size={32} /></a>
             <button 
               title="Baixar currículo"
               className="bg-effectsColor px-4 py-2 rounded-xl font-bold text-base text-black" 
