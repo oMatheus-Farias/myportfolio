@@ -24,6 +24,7 @@ interface ContextData {
 };
 
 type ProjectsData = {
+  name: string,
   image: string,
   description: string,
   technologies: string
@@ -40,6 +41,21 @@ export default function Provider({ children }: { children: ReactNode }){
   const [viewDasktop, setViewDascktop] = useState<any>(null);
   const [openOrCloseMenu, setOpenOrCloseMenu] = useState(false);
   const [currentPage, setCurrentPage] = useState('');
+
+  const projects = [
+    {
+      name: "Call Flow Manager",
+      image: projectImage01,
+      description: "Call Flow Manager (Sistema de Gestão de Chamados) é uma aplicação desenvolvida para otimizar a organização e administração eficiente de chamados em uma empresa para registrar, monitorar e atualizar informações relacionadas a chamados.",
+      technologies: "Typescript, ReactJS, Tailwindcss, Firebase, Vite"
+    },
+    {
+      name: "Web Cars",
+      image: projectImage02,
+      description: "WebCars é um projeto inspirado na plataforma WebMotors, este projeto destaca habilidades em desenvolvimento web, apresentando recursos como autenticação segura, cadastro de usuários, listagem e gerenciamento de carros..",
+      technologies: "Typescript, ReactJS, Tailwindcss, Firebase, Vite"
+    },
+  ];
 
   const technologies = [
     {
@@ -80,22 +96,9 @@ export default function Provider({ children }: { children: ReactNode }){
     },
   ];
 
-  const projects = [
-    {
-      image: projectImage01,
-      description: "Call Flow Manager (Sistema de Gestão de Chamados) é uma aplicação desenvolvida para otimizar a organização e administração eficiente de chamados em uma empresa para registrar, monitorar e atualizar informações relacionadas a chamados.",
-      technologies: "Typescript, ReactJS, Tailwindcss, Firebase, Vite"
-    },
-    {
-      image: projectImage02,
-      description: "WebCars é um projeto inspirado na plataforma WebMotors, este projeto destaca habilidades em desenvolvimento web, apresentando recursos como autenticação segura, cadastro de usuários, listagem e gerenciamento de carros..",
-      technologies: "Typescript, ReactJS, Tailwindcss, Firebase, Vite"
-    },
-  ];
-
   useEffect(() => {
     handleViewSize();
-  }, [])
+  }, []);
 
   window.addEventListener('resize', handleViewSize);
 
