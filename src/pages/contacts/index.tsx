@@ -38,13 +38,13 @@ export default function Contacts() {
             </section>
             <section className="mt-5" >
               <a 
-                href="#" title="LinkedIn" target="_blank" 
+                href="https://www.linkedin.com/in/matheus-farias-das-neves-256ba22a5/" title="LinkedIn" target="_blank" 
                 className="flex items-center gap-2"
               >
                 <FaLinkedin color="#61F2C2" size={34} 
                 
                 />
-                <p className="text-textColor underline" >https://linkedin/matheusfarias.com</p>
+                <p className="text-textColor underline" >https://www.linkedin.com/matheus-farias-das-neves</p>
               </a>
             </section>
           </div>
