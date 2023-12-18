@@ -50,7 +50,7 @@ export default function Provider({ children }: { children: ReactNode }){
       name: "Call Flow Manager",
       image: projectImage01,
       description: "Call Flow Manager (Sistema de Gestão de Chamados) é uma aplicação desenvolvida para otimizar a organização e administração eficiente de chamados em uma empresa para registrar, monitorar e atualizar informações relacionadas a chamados.",
-      technologies: "Typescript, ReactJS, Tailwindcss, Firebase, React Router dom, Vite",
+      technologies: "Typescript, ReactJS, Tailwindcss, Firebase, React Router dom, React Hook Form, Vite",
       repository: "https://github.com/oMatheus-Farias/call_flow_manager",
       linkProject: "https://call-flow-manager.vercel.app/"
     },
@@ -58,7 +58,7 @@ export default function Provider({ children }: { children: ReactNode }){
       name: "Web Cars",
       image: projectImage02,
       description: "WebCars é um projeto inspirado na plataforma WebMotors, este projeto destaca habilidades em desenvolvimento web, apresentando recursos como autenticação segura, cadastro de usuários, listagem e gerenciamento de carros.",
-      technologies: "Typescript, ReactJS, Tailwindcss, Firebase, React Router dom, Vite",
+      technologies: "Typescript, ReactJS, Tailwindcss, Firebase, React Router dom, React Hook Form, Vite",
       repository: "https://github.com/oMatheus-Farias/web-cars",
       linkProject: "https://web-cars-iota.vercel.app/"
     },
