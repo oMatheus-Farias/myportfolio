@@ -65,8 +65,8 @@ export default function Provider({ children }: { children: ReactNode }){
     {
       name: "Em breve",
       image: shortlyImage,
-      description: "Projeto em desenvolvimento",
-      technologies: "",
+      description: "Projeto em desenvolvimento...",
+      technologies: "Projeto em desenvolvimento...",
       repository: "#",
       linkProject: "#"
     }
