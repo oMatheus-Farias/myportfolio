@@ -12,6 +12,7 @@ import figmaImage from "../assets/figma.png";
 
 import projectImage01 from "../assets/project1.png";
 import projectImage02 from "../assets/project2.png";
+import projectImage03 from "../assets/project3.png";
 import shortlyImage from "../assets/shortly.png";
 
 interface ContextData {
@@ -61,6 +62,14 @@ export default function Provider({ children }: { children: ReactNode }){
       technologies: "Typescript, ReactJS, Tailwindcss, Firebase, React Router dom, React Hook Form e Vite.",
       repository: "https://github.com/oMatheus-Farias/web-cars",
       linkProject: "https://web-cars-iota.vercel.app/"
+    },
+    {
+      name: "BarberPRO",
+      image: projectImage03,
+      description: "BarberPRO é uma aplicação web full stack desenvolvida para atender às necessidades específicas de barbearias, proporcionando uma gestão eficiente dos serviços, cortes e informações dos clientes. O sistema foi construído utilizando tecnologias modernas como NextJS, TypeScript, Context API, NodeJS, PostgreSQL, Prisma, e Git.",
+      technologies: "Typescript, NextJS, Tailwindcss, Context API, NodeJS, PostgreSQL, Prisma e Git.",
+      repository: "https://github.com/oMatheus-Farias/webbarberpro",
+      linkProject: "https://www.youtube.com/watch?v=EvWv6ba7UTw"
     },
     {
       name: "Em breve",

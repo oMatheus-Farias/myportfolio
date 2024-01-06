@@ -36,7 +36,7 @@ export default function Projects() {
         {projects.map((item, index) => {
           return(
             <section 
-              className="bg-cardsColor pt-2 rounded-xl max-w-[28.7em] mx-auto flex flex-col justify-between lg:max-h-[35em]" 
+              className="bg-cardsColor pt-2 rounded-xl max-w-[28.7em] mx-auto flex flex-col justify-between  lg:mt-5" 
               key={ index }
             >
               <ProjectsCard 
