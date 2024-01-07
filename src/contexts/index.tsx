@@ -5,7 +5,11 @@ import cssImage from "../assets/css.png";
 import javascriptImage from "../assets/javascript.png";
 import typescriptImage from "../assets/typescript.png";
 import reactImage from "../assets/react.png";
+import nextjsImage from "../assets/nextjs.png";
+import nodejsImage from "../assets/nodejs.png";
 import tailwindcssImage from "../assets/tailwindcss.png";
+import postgresqlImage from "../assets/postgreSQL.png";
+import prismaImage from "../assets/prisma.png";
 import gitImage from "../assets/git.png";
 import githubImage from "../assets/github.png";
 import figmaImage from "../assets/figma.png";
@@ -103,8 +107,24 @@ export default function Provider({ children }: { children: ReactNode }){
       name: 'React'
     },
     {
+      image: nextjsImage,
+      name: 'NextJS'
+    },
+    {
+      image: nodejsImage,
+      name: 'NodeJS'
+    },
+    {
       image: tailwindcssImage,
       name: 'Tailwindcss'
+    },
+    {
+      image: postgresqlImage,
+      name: 'PostgreSQL'
+    },
+    {
+      image: prismaImage,
+      name: 'Prisma'
     },
     {
       image: gitImage,
