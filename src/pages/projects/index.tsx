@@ -5,6 +5,7 @@ import Background from "../../components/background";
 import Header from "../../components/header";
 import Nav from "../../components/nav";
 import ProjectsCard from "../../components/projectsCard";
+import Footer from "../../components/footer";
 
 import { FaGithub } from "react-icons/fa";
 import { FiLink } from "react-icons/fi";
@@ -36,7 +37,7 @@ export default function Projects() {
         {projects.map((item, index) => {
           return(
             <section 
-              className="bg-cardsColor pt-2 rounded-xl max-w-[28.7em] mx-auto flex flex-col justify-between  lg:mt-5" 
+              className="bg-cardsColor pt-2 rounded-xl max-w-[28.7em] mx-auto flex flex-col justify-between mb-24 lg:mt-5" 
               key={ index }
             >
               <ProjectsCard 
@@ -61,6 +62,7 @@ export default function Projects() {
       </main>
 
       { openOrCloseMenu && <Nav closeMenu={ () => setOpenOrCloseMenu(!openOrCloseMenu) } /> }
+      <Footer/>
     </Background>
   );
 };
