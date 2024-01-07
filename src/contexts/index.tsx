@@ -70,7 +70,7 @@ export default function Provider({ children }: { children: ReactNode }){
     {
       name: "BarberPRO",
       image: projectImage03,
-      description: "BarberPRO é uma aplicação web full stack desenvolvida para atender às necessidades específicas de barbearias, proporcionando uma gestão eficiente dos serviços, cortes e informações dos clientes. O sistema foi construído utilizando tecnologias modernas como NextJS, TypeScript, Context API, NodeJS, PostgreSQL, Prisma, e Git.",
+      description: "BarberPRO é uma aplicação web full stack desenvolvida para atender às necessidades específicas de barbearias, proporcionando uma gestão eficiente dos serviços, cortes e informações dos clientes. O sistema foi construído utilizando tecnologias modernas e com requisições http através da api desenvolvida com nodeJS, postgreSQL e Prisma.",
       technologies: "Typescript, NextJS, Tailwindcss, Context API, NodeJS, PostgreSQL, Prisma e Git.",
       repository: "https://github.com/oMatheus-Farias/webbarberpro",
       linkProject: "https://www.youtube.com/watch?v=EvWv6ba7UTw"
