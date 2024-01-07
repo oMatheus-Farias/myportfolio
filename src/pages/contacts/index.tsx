@@ -45,7 +45,7 @@ export default function Contacts() {
                 <FaLinkedin color="#61F2C2" size={34} 
                 
                 />
-                <p className="text-textColor underline" >https://www.linkedin.com/matheus-farias-das-neves</p>
+                <p className="text-textColor underline" >https://www.linkedin.com/in/matheusfariasdasneves</p>
               </a>
             </section>
           </div>
