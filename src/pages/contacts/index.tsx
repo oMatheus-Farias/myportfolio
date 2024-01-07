@@ -39,7 +39,7 @@ export default function Contacts() {
             </section>
             <section className="mt-5" >
               <a 
-                href="https://www.linkedin.com/in/matheus-farias-256ba22a5" title="LinkedIn" target="_blank" 
+                href="https://www.linkedin.com/in/matheusfariasdasneves" title="LinkedIn" target="_blank" 
                 className="flex items-center gap-2"
               >
                 <FaLinkedin color="#61F2C2" size={34} 
