@@ -4,7 +4,6 @@ import { Context } from "../../contexts";
 import Background from "../../components/background";
 import Header from "../../components/header";
 import Nav from "../../components/nav";
-import Footer from "../../components/footer";
 
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
@@ -70,7 +69,6 @@ export default function Contacts() {
       </main>
 
       { openOrCloseMenu && <Nav closeMenu={ () => setOpenOrCloseMenu(!openOrCloseMenu) } /> }
-      <Footer/>
     </Background>
   );
 };

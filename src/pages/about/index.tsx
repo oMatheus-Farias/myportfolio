@@ -35,7 +35,7 @@ export default function About() {
             <img
               src={ avatarImage }
               alt="Foto Perfil"
-              className="object-cover rounded-full w-[18.7em] h-[18.7em] object-top border-8 border-secondary lg:ml-auto lg:mt-16 lg:w-[360px] lg:h-[360px]"
+              className="object-cover rounded-full w-[18.7em] h-[18.7em] object-top border-8 border-secondary lg:ml-auto lg:w-[360px] lg:h-[360px]"
             />
           </div>
 
@@ -56,7 +56,7 @@ export default function About() {
             </section>
           
           
-            <div className="w-full flex justify-start items-center gap-6 mt-5" >
+            <div className="w-full flex justify-start items-center gap-6 mt-5 mb-36" >
               <a href="mailto:matheusfariasdasneves@gmail.com" title="Email" target="_blank" ><MdEmail color="#61F2C2" size={36} /></a>
               <a href="https://github.com/oMatheus-Farias" title="GitHub" target="_blank" ><FaGithub color="#61F2C2" size={32} /></a>
               <a href="https://www.linkedin.com/in/matheusfariasdasneves" title="LinkedIn" target="_blank" ><FaLinkedin color="#61F2C2" size={32} /></a>
@@ -72,7 +72,7 @@ export default function About() {
           </div>
         </main>
         { openOrCloseMenu && <Nav closeMenu={ () => setOpenOrCloseMenu(!openOrCloseMenu) } /> }
-      <Footer/>
+        <Footer/>
       </Background>
     </>
   );
