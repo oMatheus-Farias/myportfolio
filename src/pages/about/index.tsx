@@ -63,7 +63,7 @@ export default function About() {
               <a href="https://drive.google.com/u/0/uc?id=1UAXtZAoS9PPLrx4gsI6dRIjzJAsOz8Zb&export=download" >
                 <button 
                   title="Baixar currículo"
-                  className="bg-effectsColor px-4 py-2 rounded-xl font-bold text-base text-black" 
+                  className="bg-effectsColor px-4 py-2 rounded-xl font-bold text-base text-black hover:bg-hoverOrange transition-all" 
                 >
                   Baixar CV
                 </button>

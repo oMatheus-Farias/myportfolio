@@ -12,8 +12,9 @@ export default {
         headerColor: '#0C0C0E',
         textColor: '#FFFBFF',
         effectsColor: '#F24C00',
+        hoverOrange: '#FF6A25',
         backgroundFilter: 'rgba(0, 0, 0, 0.7)',
-        cardsColor: 'rgba(255, 255, 255, 0.2)'
+        cardsColor: 'rgba(255, 255, 255, 0.2)',
       },
       backgroundImage: {
         'backgroundImage': "url('../src/assets/bg-image.jpg')"

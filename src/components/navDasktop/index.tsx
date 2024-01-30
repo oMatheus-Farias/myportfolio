@@ -9,21 +9,21 @@ export default function NavDasktop(){
   return(
     <nav className="flex items-center gap-8 lg:gap-16" >
       <Link 
-          className="text-textColor font-bold border-b-2"
+          className="text-textColor font-bold border-b-2 hover:text-effectsColor transition-all"
           style={{ borderBottomColor: currentPage === '/' ? '#F24C00' : 'transparent' }}
           to='/' 
         >
           sobre
         </Link>
         <Link 
-          className="text-textColor font-bold border-b-2"
+          className="text-textColor font-bold border-b-2 hover:text-effectsColor transition-all"
           style={{ borderBottomColor: currentPage === '/specialties' ? '#F24C00' : 'transparent' }}
           to='/specialties' 
         >
           especialidades
         </Link>
         <Link 
-          className="text-textColor font-bold border-b-2"
+          className="text-textColor font-bold border-b-2 hover:text-effectsColor transition-all"
           style={{ borderBottomColor: currentPage === '/projects' ? '#F24C00' : 'transparent' }}
           to='/projects' 
         >
