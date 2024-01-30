@@ -80,7 +80,7 @@ export default function Provider({ children }: { children: ReactNode }){
       name: "DentalSupport",
       image: projectImage04,
       description: "DentalSupport, uma aplicação full stack dedicada aos serviços odontológicos, proporcionando uma abordagem abrangente tanto para profissionais de saúde bucal quanto para pacientes. Com uma interface intuitiva, totalmente responsiva e com funcionalidades específicas para ambos os públicos, a plataforma visa simplificar o agendamento de consultas, melhorar a gestão de clínicas odontológicas e oferecer uma experiência aprimorada aos usuários.",
-      technologies: "Typescript, NextJS, React.js, React Hook Form, Context API, Tailwindcss, Node.js, PostgreSQL, Prisma e Git.",
+      technologies: "Typescript, Next.js, React.js, React Hook Form, Context API, Tailwindcss, Node.js, PostgreSQL, Prisma e Git.",
       repository: "https://github.com/oMatheus-Farias/appdentalsupport",
       linkProject: "https://www.youtube.com/watch?v=rVWkyv_xSLA"
     },
