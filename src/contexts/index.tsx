@@ -18,6 +18,7 @@ import projectImage01 from "../assets/project1.png";
 import projectImage02 from "../assets/project2.png";
 import projectImage03 from "../assets/project3.png";
 import projectImage04 from "../assets/project4.png";
+import projectImage05 from "../assets/project5.png";
 import shortlyImage from "../assets/shortly.png";
 
 interface ContextData {
@@ -83,6 +84,14 @@ export default function Provider({ children }: { children: ReactNode }){
       technologies: "Typescript, Next.js, React.js, React Hook Form, Context API, Tailwindcss, Node.js, PostgreSQL, Prisma e Git.",
       repository: "https://github.com/oMatheus-Farias/appdentalsupport",
       linkProject: "https://www.youtube.com/watch?v=rVWkyv_xSLA"
+    },
+    {
+      name: "CoffeeShop",
+      image: projectImage05,
+      description: "Projeto de uma Landing Page, denominado CoffeeShop, uma aplicação web que visa a apresentação virtual de uma cafeteria fictícia. Desenvolvido com HTML para uma estruturação sólida e semântica, Sass (CSS) para organização eficiente da estilização e JavaScript. O projeto oferece uma experiência elegante e responsiva aos usuários.",
+      technologies: "HTML, CSS, SASS, JavaScript, Git e Vercel.",
+      repository: "https://github.com/oMatheus-Farias/appcoffeeshop",
+      linkProject: "https://appcoffeeshop.vercel.app/"
     },
     {
       name: "Em breve",
