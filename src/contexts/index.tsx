@@ -2,6 +2,7 @@ import { createContext, ReactNode, useState, useEffect } from "react";
 
 import htmlImage from "../assets/html.png";
 import cssImage from "../assets/css.png";
+import sassImage from "../assets/sass.png";
 import javascriptImage from "../assets/javascript.png";
 import typescriptImage from "../assets/typescript.png";
 import reactImage from "../assets/react.png";
@@ -131,6 +132,10 @@ export default function Provider({ children }: { children: ReactNode }){
     {
       image: nodejsImage,
       name: 'Node.js'
+    },
+    {
+      image: sassImage,
+      name: 'Sass'
     },
     {
       image: tailwindcssImage,
