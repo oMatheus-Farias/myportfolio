@@ -111,7 +111,7 @@ export default function Provider({ children }: { children: ReactNode }) {
       description:
         "Projeto de Landing Page dedicado aos entusiastas de supercarros. Desenvolvida como parte de um teste para uma vaga de desenvolvedor front-end, esta página proporciona uma experiência envolvente e totalmente responsiva. O design elegante inclui um slider dinâmico, alimentado pela biblioteca Nivo Slider jQuery, que exibe imagens de supercarros, oferecendo uma transição suave entre elas.",
       technologies:
-        "HTML, CSS, JavaScript, Git, GitHub, AOS animate on scroll library, Nivo Slider jQuery e Vercel.",
+        "HTML, CSS, JavaScript, Git, GitHub, Nivo Slider jQuery e Vercel.",
       repository: "https://github.com/oMatheus-Farias/test-groupidealtrends",
       linkProject: "https://test-groupidealtrends.vercel.app/",
     },
@@ -121,7 +121,7 @@ export default function Provider({ children }: { children: ReactNode }) {
       description:
         "O Vestir Vibes é um e-commerce de roupas desenvolvido como uma aplicação web robusta e eficiente. Utilizando tecnologias modernas como Vite, React.js, TypeScript, React Router Dom, Context API, React Hook Form, Tailwind CSS e Firebase, o projeto oferece uma experiência de compra online fluida e segura. A integração com bibliotecas como Stripe para processamento de pagamentos adiciona uma camada adicional de confiabilidade ao sistema.",
       technologies:
-        "Typescript, React.js, Tailwindcss, Firebase, React Router dom, React Hook Form, Context API, Stripe, Git, GitHub, Vite e Vercel.",
+        "Typescript, React.js, Tailwindcss, Firebase, React Router dom, React Hook Form, Context API, Stripe, AOS animate on scroll library, Git, GitHub, Vite e Vercel.",
       repository: "https://github.com/oMatheus-Farias/vestirvibes-ecommerce",
       linkProject: "https://vestirvibes-ecommerce.vercel.app/",
     },
